@@ -15,7 +15,7 @@ const AdminOrderlist = () => {
   useEffect(() => {
     axios.defaults.withCredentials = true;
     axios
-      .get("https://ecommercebackend-6zsu.onrender.com/api/auth/validate")
+      .get("https://ecommercebackend-6zsu.onrender.com/api/auth")
       .then((res) => {
         if (res.data.value && res.data.usertype === "admin") {
           console.log("User authenticated");

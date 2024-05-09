@@ -14,7 +14,7 @@ const navigate=useNavigate()
 useEffect(() => {
   // Check if user data is available
   axios.defaults.withCredentials=true;
-  axios.get('https://ecommercebackend-6zsu.onrender.com/api/auth/validate').then(res=>{
+  axios.get('https://ecommercebackend-6zsu.onrender.com/api/auth').then(res=>{
     // console.log(res)
     console.log(res.data.usertype)
     if(res.data.value && res.data.usertype=="admin"){
