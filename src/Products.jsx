@@ -14,8 +14,8 @@ const navigate=useNavigate()
 useEffect(() => {
   // Check if user data is available
   axios.defaults.withCredentials=true;
-  axios.get('https://ecommercebackend-6zsu.onrender.com/api/auth/').then(res=>{
-    // console.log(res)
+  axios.get('https://ecommercebackend-6zsu.onrender.com/api/auth/validate').then(res=>{
+    console.log(res)
     if(res.data.value){
            if(res.data.value&& res.data.usertype==="admin"){
             setIsadmin(true)
@@ -28,11 +28,12 @@ useEffect(() => {
       console.log("User authenticated")
  
     }else{
+      console.log("not authenticated")
       logout();
     }
   })
 
-},[] );
+},[products] );
 
 
 

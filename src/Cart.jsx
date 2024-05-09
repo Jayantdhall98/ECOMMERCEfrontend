@@ -10,7 +10,7 @@ export default function Cart() {
 
   useEffect(() => {
     axios.defaults.withCredentials = true;
-    axios.get('https://ecommercebackend-6zsu.onrender.com/api/auth/').then((res) => {
+    axios.get('https://ecommercebackend-6zsu.onrender.com/api/auth/validate').then((res) => {
       if (res.data.value) {
         console.log('User authenticated');
       } else {
