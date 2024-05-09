@@ -1,0 +1,83 @@
+
+.mar-l{
+margin-left: 1rem;
+}
+
+.mar-l5{
+margin-left: 7rem;
+}
+
+.flex{
+
+    
+   
+   display: grid;
+  
+   
+   
+}
+
+.carddiv{
+   overflow: hidden;
+}
+
+.overflow{
+   overflow: hidden;
+   height: 100%;
+   width: 100%;
+}
+.zoom:hover{
+   transform: scale(1.2);
+   transition: all 1s;
+}
+
+
+
+.imgcover {
+   object-fit: cover; /* Image ko container ke andar puri tarah se cover karegi */
+   width: 100%; /* Image ka width 100% set karegi */
+   height: 100%; /* Image ka height 100% set karegi */
+ }
+ 
+
+
+.icon-hover:hover {
+   border-color: #3b71ca !important;
+   background-color: white !important;
+   color: #3b71ca !important;
+ }
+ 
+ .icon-hover:hover i {
+   color: #3b71ca !important;
+ }
+
+
+
+ .shopnow{
+ color: white;
+ font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+ .shopnowspan{
+
+   background-color: hsl(216, 93%, 45%);
+   opacity: 5;
+   border-radius: 15%;
+   padding: 3px;
+  
+ }
+
+
+
+ .gradient-custom {
+   /* fallback for old browsers */
+   background: #cd9cf2;
+   
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1));
+   
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1))
+   }
